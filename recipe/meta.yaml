@@ -1,4 +1,4 @@
-{% set version = "0.1.13" %}
+{% set version = "0.1.14" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MatrixExtra_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MatrixExtra/MatrixExtra_{{ version }}.tar.gz
-  sha256: 6a8c6b4d74a36222148590252663e76d2d991789f0a116a2b73a9f99ee471ee9
+  sha256: 01e4de13ca263446f28c5b8ce2e17693783e395329eae46d310a2f7d0c718625
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -61,10 +61,10 @@ test:
 about:
   home: https://github.com/david-cortes/MatrixExtra
   license: GPL-2.0-or-later
-  summary: "Extends sparse matrix and vector classes from the 'Matrix' package by providing: (a) Methods and operators that work natively on CSR formats (compressed sparse row, a.k.a. 'RsparseMatrix') such as slicing/sub-setting, assignment, rbind(), mathematical operators for CSR and COO such as addition (\"+\") or sqrt(),\
-    \ and methods such as diag(); (b) Multi-threaded matrix multiplication and cross-product for many <sparse, dense> types, including the 'float32' type from 'float'; (c) Coercion methods between pairs of classes which are not present in 'Matrix', such as 'dgCMatrix' -> 'ngRMatrix', as well as convenience conversion functions;\
-    \ (d) Utility functions for sparse matrices such as sorting the indices or removing zero-valued entries; (e) Fast transposes that work by outputting in the opposite storage format; (f) Faster replacements for many 'Matrix' methods for all sparse types, such as slicing and elementwise multiplication. (g) Convenience functions\
-    \ for sparse objects, such as 'mapSparse' or a shorter 'show' method."
+  summary: "Extends sparse matrix and vector classes from the 'Matrix' package by providing: (a) Methods and operators that work natively on CSR formats (compressed sparse row, a.k.a. 'RsparseMatrix') such as slicing/sub-setting, assignment, rbind(), mathematical operators for CSR and COO such as addition (\"+\") or sqrt(),
+    and methods such as diag(); (b) Multi-threaded matrix multiplication and cross-product for many <sparse, dense> types, including the 'float32' type from 'float'; (c) Coercion methods between pairs of classes which are not present in 'Matrix', such as 'dgCMatrix' -> 'ngRMatrix', as well as convenience conversion functions;
+    (d) Utility functions for sparse matrices such as sorting the indices or removing zero-valued entries; (e) Fast transposes that work by outputting in the opposite storage format; (f) Faster replacements for many 'Matrix' methods for all sparse types, such as slicing and elementwise multiplication. (g) Convenience functions
+    for sparse objects, such as 'mapSparse' or a shorter 'show' method."
   license_family: GPL2
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2

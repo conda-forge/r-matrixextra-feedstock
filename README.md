@@ -3,6 +3,7 @@ About r-matrixextra-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-matrixextra-feedstock/blob/main/LICENSE.txt)
 
+
 About r-matrixextra
 -------------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/david-cortes/MatrixExtra
 Package license: GPL-2.0-or-later
 
 Summary: Extends sparse matrix and vector classes from the 'Matrix' package by providing: (a) Methods and operators that work natively on CSR formats (compressed sparse row, a.k.a. 'RsparseMatrix') such as slicing/sub-setting, assignment, rbind(), mathematical operators for CSR and COO such as addition ("+") or sqrt(), and methods such as diag(); (b) Multi-threaded matrix multiplication and cross-product for many <sparse, dense> types, including the 'float32' type from 'float'; (c) Coercion methods between pairs of classes which are not present in 'Matrix', such as 'dgCMatrix' -> 'ngRMatrix', as well as convenience conversion functions; (d) Utility functions for sparse matrices such as sorting the indices or removing zero-valued entries; (e) Fast transposes that work by outputting in the opposite storage format; (f) Faster replacements for many 'Matrix' methods for all sparse types, such as slicing and elementwise multiplication. (g) Convenience functions for sparse objects, such as 'mapSparse' or a shorter 'show' method.
+
 About r-matrixextra
 -------------------
 
